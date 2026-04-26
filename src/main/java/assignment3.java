@@ -9,6 +9,7 @@ public class assignment3 {
         ChromeDriver driver=new ChromeDriver();
         driver.get("https://www.makemytrip.com/");
         driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
