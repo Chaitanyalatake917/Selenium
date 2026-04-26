@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SampleSuite">
+    <test name="SampleGroupTest">
+        <groups>
+            <run>
+                <include name="smoke"/>
+<!--                exclude is not necessary here but for reference attached-->
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG.Demo2"/>
+        </classes>
+    </test>
+</suite>
